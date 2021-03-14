@@ -176,7 +176,7 @@ private SearchListDao searchListDao = new SearchListDao();
 		int checkAuthor = pickIdNumber("author");
 		
 		if (checkAuthor == 0) {
-			System.out.println("\n\t*** Returning you to the main menu to add the author;");
+			System.out.println("\n\t*** Returning you to the main menu to add the author ***");
 			return;
 		}
 		
@@ -184,7 +184,7 @@ private SearchListDao searchListDao = new SearchListDao();
 		int checkSeries = pickIdNumber("series");
 		
 		if (checkSeries == 0) {
-			System.out.println("\n\t*** Returning you to the main menu to add the series;");
+			System.out.println("\n\t*** Returning you to the main menu to add the series ***");
 			return;
 		}
 		
@@ -307,6 +307,7 @@ private SearchListDao searchListDao = new SearchListDao();
 		System.out.print("Enter the correct name for this series:");
 		String newName = scanner.nextLine();
 		seriesDao.updateSeries(pick, newName);
+		System.out.println("\n\t*** Update successful ***");
 	}
 	
 	// delete	
